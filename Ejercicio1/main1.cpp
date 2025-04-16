@@ -19,7 +19,7 @@ int main() {
     cout << "Daño al atacar: " << barbaro->hacerDanio() << endl;
 
     // Crear un Mago (Hechicero) 
-    shared_ptr<Mago> hechicero = make_shared<Hechicero>("Hechicero", 100, 50, 30, Afinidad::Fuego);
+    shared_ptr<Mago> hechicero = make_shared<Hechicero>();
     shared_ptr<IArma> amuleto = make_shared<Amuleto>();
 
     hechicero->agregarArma(amuleto);// le pongo amuleto
