@@ -5,7 +5,7 @@
 using namespace std;
 
 Hechicero::Hechicero()
-    : Mago("Hechicero", 120, 60, 40, Afinidad::Fuego) {}  
+    : Mago("Hechicero", 100, 60, 40, Afinidad::Fuego) {}  
 
 int Hechicero::hacerDanio() {
     if (mana >= 15) {

@@ -3,6 +3,12 @@
 
 using namespace std;
 
+/*
+En este archivo implemento la clase Guerrero que ya había definido en el .hpp. Acá escribí cómo se comportan sus funciones. Por ejemplo, cómo se 
+obtiene el nombre, la vida, la fuerza, o cómo se muestra la información completa del guerrero.
+También agregué la posibilidad de que el guerrero tenga varias armas (con vector<shared_ptr<IArma>>), y se pueden agregar con agregarArma(). La 
+función mostrarInfo() imprime todo lo importante del guerrero, incluyendo su armadura y las armas que tenga.
+*/
 
 Guerrero :: Guerrero(string nombre, int vida, int estamina, int fuerza, Armadura armadura )
     : nombre(nombre), vida(vida), estamina(estamina), fuerza(fuerza), armadura(armadura) {}

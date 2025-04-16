@@ -4,6 +4,15 @@
 #include "I_Armas.hpp"  
 using namespace std;
 
+/*
+En este archivo definí una clase abstracta llamada Items_Mag, que representa los ítems mágicos que usan los magos en el juego. Esta clase hereda 
+de la interfaz IArma, así que también tiene funciones como usar() y reparar() (aunque acá no están implementadas porque van a ser distintas en 
+cada ítem específico como el amuleto o el bastón).
+Los atributos que tiene cada ítem son: el nombre, el daño que hace, el maná que consume, el elemento mágico que representa (como fuego, aire, 
+oscuridad, etc.), y el alcance del ataque. También hay métodos para acceder a cada uno de esos atributos, que después se usan para mostrar o 
+calcular cosas durante la batalla.
+*/
+
 enum class Elemento {
     Fuego,
     Acuatico,

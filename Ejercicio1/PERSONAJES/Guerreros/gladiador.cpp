@@ -4,7 +4,7 @@
 using namespace std;
 
 Gladiador :: Gladiador()
-    : Guerrero("Gladiador", 150, 50, 50, Armadura::Pantalones) {}
+    : Guerrero("Gladiador", 100, 50, 50, Armadura::Pantalones) {}
 
 int Gladiador::hacerDanio() {
     // Por cada ataque gasta 10 de estamina

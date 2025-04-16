@@ -4,7 +4,7 @@
 using namespace std;
 
 Mercenario :: Mercenario()
-    : Guerrero("Mercenario", 150, 70, 10, Armadura::Pantalones) {}
+    : Guerrero("Mercenario", 100, 70, 10, Armadura::Pantalones) {}
 
 int Mercenario::hacerDanio() {
     // Por cada ataque gasta 10 de estamina

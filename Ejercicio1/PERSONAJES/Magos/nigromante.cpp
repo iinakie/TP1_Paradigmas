@@ -4,7 +4,7 @@
 using namespace std;
 
 Nigromante::Nigromante()
-    : Mago("Nigromante", 120, 60, 40, Afinidad::Fuego) {}  
+    : Mago("Nigromante", 100, 60, 40, Afinidad::Fuego) {}  
 
 int Nigromante::hacerDanio() {
     if (mana >= 15) {

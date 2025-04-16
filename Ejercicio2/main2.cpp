@@ -5,6 +5,24 @@
 
 using namespace std;
 
+/*
+Este archivo contiene la implementación del programa principal que simula la creación y visualización de personajes aleatorios (magos y guerreros) 
+con armas, y muestra sus detalles en consola.
+1) Inicialización de números aleatorios: La función srand() inicializa el generador de números aleatorios utilizando la hora actual (time(0)), 
+lo que garantiza que se obtendrán diferentes resultados en cada ejecución.
+
+2) Generación aleatoria de personajes:
+    - Magos: Se generan entre 3 y 7 personajes magos utilizando rand() % 5 + 3, y luego se asignan armas aleatorias a cada uno utilizando el método 
+    crearPersonajeConArma() de la clase PersonajeFactory. Los personajes se agregan al vector personajes solo si su clase es "Mago".
+    - Guerreros: De manera similar, se generan entre 3 y 7 personajes guerreros. Se asegura que solo se agreguen guerreros a la lista, verificando 
+    que el personaje creado sea de la clase "Guerrero".
+    - Visualización de personajes: Luego de crear todos los personajes (magos y guerreros), el programa recorre el vector personajes e imprime la 
+    información de cada uno (como nombre, vida, estamina, etc.) junto con el daño estimado que pueden causar en un ataque utilizando el método 
+    hacerDanio().
+En este archivo demuestro la integración de las clases y métodos creados en el resto del proyecto, mostrando la flexibilidad de la PersonajeFactory
+para generar personajes y asignarles armas de forma aleatoria.
+*/
+
 int main() {
     srand(static_cast<unsigned>(time(0)));
 

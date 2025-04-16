@@ -6,6 +6,14 @@
 #include "I_Personajes.hpp"  
 using namespace std;
 
+/*
+En este archivo definí la clase abstracta Guerrero. Básicamente, representa a cualquier personaje del tipo guerrero, como un bárbaro o un caballero.
+Tiene atributos típicos como nombre, vida, estamina, fuerza y qué armadura usa.
+También incluí un vector para que el guerrero pueda tener varias armas. Las funciones declaradas acá sirven para obtener sus datos (getNombre, 
+getVida, etc.), hacer daño, defenderse y recibir daño. Pero como es una clase abstracta, todavía no le digo cómo lo hacen, eso se completa en los 
+guerreros específicos como el Barbaro.
+*/
+
 enum class Armadura {
     Casco,
     Pechera,

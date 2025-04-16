@@ -4,7 +4,7 @@
 using namespace std;
 
 Conjurador::Conjurador()
-    : Mago("Conjurador", 120, 50, 30, Afinidad::Fuego) {}  
+    : Mago("Conjurador", 100, 50, 30, Afinidad::Fuego) {}  
 
 int Conjurador::hacerDanio() {
     if (mana >= 15) {

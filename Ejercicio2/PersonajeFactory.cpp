@@ -1,4 +1,20 @@
 #include "PersonajeFactory.hpp"
+#include <memory>
+/*
+Este archivo implementa los métodos de la clase PersonajeFactory, los cuales se encargan de crear personajes y armas de forma aleatoria y 
+asignarlas a los personajes correspondientes. Utiliza la funcionalidad de rand() para garantizar que la creación de personajes y armas sea 
+impredecible en cada ejecución.
+- crearPersonajeAleatorio(): Este método crea un personaje aleatorio. Usando rand() % 10, se elige un valor entre 0 y 9, donde los primeros 5 
+valores representan guerreros (como Barbaro, Paladin, etc.) y los otros 5 representan magos (como Hechicero, Brujo, etc.). Si el valor aleatorio 
+no coincide, se crea un Barbaro por defecto.
+- crearArmaCompatible(): Dependiendo del tipo de personaje (mago o guerrero), se asigna un arma compatible. Los guerreros pueden tener armas de 
+combate (como Espada, Hacha, Lanza, etc.), mientras que los magos reciben ítems mágicos (como Amuleto, Pocion, Baston, etc.).
+- crearPersonajeConArma(): Este método primero crea un personaje aleatorio utilizando crearPersonajeAleatorio(), luego le asigna entre 0 y 2 armas 
+aleatorias, mediante crearArmaCompatible() y el método agregarArma(), que agrega las armas al personaje.
+En esta implementación utilizo punteros inteligentes (shared_ptr) para manejar la memoria automáticamente y evitar fugas de memoria. Además, 
+los métodos están diseñados para ser fácilmente extensibles, lo que hace que se pueda agregar más personajes o armas en el futuro con facilidad.
+*/
+
 
 shared_ptr<IPersonajes> PersonajeFactory::crearPersonajeAleatorio() {
     int tipo = rand() % 10; // 0–4 guerreros, 5–9 magos

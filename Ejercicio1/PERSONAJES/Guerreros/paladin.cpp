@@ -4,7 +4,7 @@
 using namespace std;
 
 Paladin :: Paladin()
-    : Guerrero("Paladin", 150, 60, 20, Armadura::Pantalones) {}
+    : Guerrero("Paladin", 100, 60, 20, Armadura::Pantalones) {}
 
 int Paladin::hacerDanio() {
     // Por cada ataque gasta 10 de estamina
@@ -17,7 +17,7 @@ int Paladin::hacerDanio() {
     int danioTotal = fuerza;
 
     if (arma) {
-        danioTotal += arma->getDanio();  // ← agrega daño del arma si tiene
+        danioTotal += arma->getDanio();  // agrega daño del arma si tiene
     }
 
     return danioTotal;

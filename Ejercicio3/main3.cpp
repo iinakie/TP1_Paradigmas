@@ -5,6 +5,32 @@
 
 using namespace std;
 
+/*
+Este archivo contiene el código principal para gestionar una batalla entre dos personajes. Los jugadores pueden elegir a su personaje y su arma, 
+mientras que el segundo jugador (enemigo) es generado aleatoriamente. Se sigue un modelo de combate basado en las acciones de "Golpe Fuerte", 
+"Golpe Rápido" y "Defensa y Golpe".
+
+1) Creación de personajes:
+    - Jugador 1: El usuario elige el personaje y el arma manualmente.
+    - Jugador 2: El personaje del enemigo se genera aleatoriamente con un arma.
+
+2) Acciones:
+    - Jugador 1 elige una acción entre las tres posibles (con un cin).
+    - Jugador 2 tiene su acción seleccionada aleatoriamente.
+
+3) Resolución de la ronda:
+    - El combate se resuelve comparando las acciones de ambos jugadores. Dependiendo de las elecciones, el daño se asigna a cada uno. "Golpe Fuerte"
+    vence a "Golpe Rápido", "Golpe Rápido" vence a "Defensa y Golpe", y "Defensa y Golpe" bloquea el "Golpe Fuerte".
+
+4) Estado de los jugadores:
+    - El código muestra la información del personaje de cada jugador, su arma y los puntos de vida (HP) restantes después de cada ronda.
+
+5) Final del juego:
+    - El ciclo de la batalla continúa hasta que uno de los jugadores se le termine sus puntos de vida. El jugador que pierda sus 100 HP primero 
+    pierde la batalla.
+*/
+
+
 shared_ptr<IPersonajes> crearPersonajeManual();
 shared_ptr<IArma> elegirArmaManual(const string& tipo);
 

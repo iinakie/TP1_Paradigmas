@@ -5,6 +5,14 @@
 #include "I_Personajes.hpp"  
 using namespace std;
 
+/*
+En este archivo defino una clase abstracta para todos los magos del juego. Lo que hice fue usar la interfaz de personajes (IPersonajes) y extenderla 
+con características específicas de los magos, como el maná y la afinidad (fuego, agua, oscuridad, etc.).
+También tiene funciones para manejar cosas básicas como obtener el nombre, vida, estamina, afinidad y maná. Además, los magos pueden defenderse y 
+tener armas mágicas guardadas en un vector. La idea es que esta clase sirva como base para crear distintos tipos de magos (como brujo o hechicero), 
+pero que cada uno tenga que completar sus propias funciones para atacar, defenderse y recibir daño.
+*/
+
 enum class Afinidad {
     Fuego,
     Agua,

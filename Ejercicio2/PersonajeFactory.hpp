@@ -35,6 +35,20 @@
 #include "../Ejercicio1/ARMAS/Items_mag/libro_hechizos.hpp"
 #include "../Ejercicio1/ARMAS/Items_mag/pocion.hpp"
 
+/*
+En este archivo declaro la clase PersonajeFactory, que se encarga de crear personajes (tanto magos como guerreros) y asignarles armas en función de 
+ciertas condiciones aleatorias. En lugar de crear cada objeto de forma manual, la clase maneja la creación de los personajes y sus respectivas 
+armas a través de métodos estáticos.
+- inicializarRandom(): Inicia la semilla para generar números aleatorios.
+- crearPersonajeAleatorio(): Devuelve un personaje aleatorio, ya sea un mago o un guerrero, utilizando rand() para elegir entre varias opciones.
+- crearArmaCompatible(): Según el tipo de personaje (mago o guerrero), asigna un arma compatible. Los guerreros pueden tener armas de combate (como
+ espadas o hachas), mientras que los magos pueden tener ítems mágicos (como amuletos o pociones).
+- crearPersonajeConArma(): Crea un personaje y le asigna un arma, usando los métodos anteriores.
+La clase permite manejar la creación de personajes y armas de forma más organizada y flexible, usando shared_ptr para manejar la memoria de los 
+objetos creados.
+*/
+
+
 class PersonajeFactory {
 public:
     static void inicializarRandom();

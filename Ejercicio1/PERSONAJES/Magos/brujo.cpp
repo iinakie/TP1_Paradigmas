@@ -5,7 +5,7 @@
 using namespace std;
 
 Brujo::Brujo()
-    : Mago("Brujo", 120, 50, 40, Afinidad::Fuego) {}  
+    : Mago("Brujo", 100, 50, 40, Afinidad::Fuego) {}  
     
 int Brujo::hacerDanio() {
     if (mana >= 15) {

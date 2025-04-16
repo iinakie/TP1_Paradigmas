@@ -18,9 +18,6 @@ SOURCES = Ejercicio1/PERSONAJES/Magos/*.cpp \
 			Ejercicio2/PersonajeFactory.cpp 
 
 
-Ej1 : 
-	g++ -std=c++17 -Wall -Wextra $(HEADERS) -g Ejercicio1/main1.cpp $(SOURCES) -o ejercicio1
-	./ejercicio1
 Ej2 : 
 	g++ -std=c++17 -Wall -Wextra $(HEADERS) -g Ejercicio2/main2.cpp $(SOURCES) -o ejercicio2
 	./ejercicio2

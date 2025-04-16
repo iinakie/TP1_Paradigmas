@@ -3,6 +3,13 @@
 
 using namespace std;
 
+/*
+En este archivo implemento las funciones de la clase abstracta Mago. Acá es donde puse cómo se construye un mago y cómo se accede a sus atributos 
+como el nombre, vida, estamina, maná y afinidad elemental (como fuego, aire, etc.).
+También armé funciones para que los magos puedan mostrar su información completa por consola y para que puedan tener varias armas mágicas. 
+Por ejemplo, con agregarArma puedo darle un arma a un mago, y después mostrarInfo muestra todos sus datos y sus armas actuales.
+*/
+
 Mago::Mago(string nombre, int vida, int mana, int estamina, Afinidad afindad)
     : nombre(nombre), vida(vida), mana(mana), estamina(estamina), afinidad(afindad) {}
 

@@ -4,7 +4,7 @@
 using namespace std;
 
 Barbaro::Barbaro()
-    : Guerrero("Bárbaro", 150, 30, 40, Armadura::Pechera) {}
+    : Guerrero("Bárbaro", 100, 30, 40, Armadura::Pechera) {}
 
 int Barbaro::hacerDanio() {
     // Por cada ataque gasta 10 de estamina

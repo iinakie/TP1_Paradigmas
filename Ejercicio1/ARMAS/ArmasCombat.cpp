@@ -2,9 +2,14 @@
 #include <iostream>
 
 using namespace std;
+/* 
+En este archivo implemento los métodos de la clase abstracta ArmaCombate. Acá se define cómo funciona el constructor, que recibe todos los datos 
+importantes del arma (nombre, daño, durabilidad, rareza y ataque especial). También están las funciones para acceder a esa información 
+(getNombre, getDanio, etc.), y otras que transforman los enums (como Rareza o AtaqueEspecial) en strings para que sea más fácil mostrarlos 
+por pantalla. La función mostrarInfo() imprime todos los datos del arma de forma ordenada.
+*/
 
-
-ArmaCombate::ArmaCombate(std::string nombre, int danio, int durabilidad, Rareza rareza, AtaqueEspecial ataque_especial )
+ArmaCombate::ArmaCombate(string nombre, int danio, int durabilidad, Rareza rareza, AtaqueEspecial ataque_especial )
     : nombre(nombre), danio(danio), durabilidad(durabilidad), rareza(rareza), ataque_especial(ataque_especial) {}
 
 string ArmaCombate :: getNombre() const { return nombre; }
