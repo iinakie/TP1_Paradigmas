@@ -6,6 +6,13 @@
 
 using namespace std;
 
+/*
+Este programa simula una pequeña batalla entre dos personajes: un Guerrero y un Mago. Los personajes están representados por objetos de las 
+clases Barbaro y Hechicero, respectivamente, los cuales son de las clases derivadas de una "jerarquía" más general de personajes 
+(Guerreros y Magos). Además, cada uno de estos personajes tiene un arma asociada, representada por los objetos Espada y Amuleto.
+*/
+
+
 int main() {
     // Crear un Guerrero (Barbaro) 
     shared_ptr<Guerrero> barbaro = make_shared<Barbaro>();
